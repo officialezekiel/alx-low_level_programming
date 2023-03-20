@@ -18,5 +18,5 @@ while (upperCase <= 'Z')
 	upperCase += 1;
 }
 putchar('\n');
-reurn (0)
+return (0);
 }
