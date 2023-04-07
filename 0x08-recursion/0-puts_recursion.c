@@ -1,19 +1,20 @@
 #include "main.h"
 /**
- * _puts_recursion - puts recursion
- *
- * @s: pointer variable
- * Return: 0 (success)
+ *  _puts_recursion - puts a recursion
+ *  @s: pointer variable
+ *  Return: 0 (success)
  */
+
 void _puts_recursion(char *s)
 {
-	if (*s != '\0')
+	if (*s == '\n')
 	{
-		_puts_recursion(s + 1);
-		_putchar(*s);
+		_putchar('\n');
+		return;
 	}
 	else
 	{
-	return;
+		_putchar(*s);
+		_puts_recursion(s + 1);
 	}
 }
